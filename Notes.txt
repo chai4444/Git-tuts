@@ -1,0 +1,72 @@
+-check verison of git
+git --version
+
+--for new repor created 
+git status
+fatal: not a git repository (or any of the parent directories): .git
+
+-- we need to initialize new git
+$ git init
+Initialized empty Git repository in F:/Git Tuts/.git/
+
+
+--enroll you self with git
+
+git config --global user.email "chaitanyakhambete@gmail.com"
+git config --global user.name "chaitanya khambete"
+
+-- put all untracked files to staging area
+git add .
+git status
+
+-- put all files from staging to repo
+git commit -m "<proper comment>"
+
+-- get history of all the commits done
+git log
+
+
+====================
+-- registring git to git hub 
+$ git remote add origin git@github.com:chai4444/Git-tuts.git
+
+--push code from staging to git
+git push -u origin master
+
+- all commits will be made to github
+====================================
+
+if any changes done is github and not present in staging
+$ git pull origin master --> pull data from origin (hub) to master
+
+
+
+=================
+difference between previous commits 
+git diff <filename>
+git diff .
+
+===========
+if any changes made in files and we want to revert them to previous comit
+$ git checkout <file name>
+$ git checkout .
+
+========
+branching system
+$git branch branch_name
+
+switch to different branch
+$git checkout master
+
+==================
+delete branch
+git branch -d <branch_name>
+git push origin -delete <branch_name>
+
+
+
+
+
+
+
+
