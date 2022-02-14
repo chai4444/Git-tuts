@@ -64,8 +64,10 @@ git branch -d <branch_name>
 git push origin -delete <branch_name>
 
 
+========================
+clone other repo
 
-
+git clone <ssh url>
 
 
 
